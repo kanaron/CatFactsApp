@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32516.85
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtaFactsLib", "CtaFactsLib\CtaFactsLib.csproj", "{48AE5211-8FE7-437E-970F-970BC440F186}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48AE5211-8FE7-437E-970F-970BC440F186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48AE5211-8FE7-437E-970F-970BC440F186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48AE5211-8FE7-437E-970F-970BC440F186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48AE5211-8FE7-437E-970F-970BC440F186}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BCF9D47-D4A1-4A6C-9AE9-69E01489C0DD}
+	EndGlobalSection
+EndGlobal
