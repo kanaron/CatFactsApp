@@ -4,9 +4,11 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    @*<h1 class="display-4">Welcome</h1>*@
-    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+<h4>Random cat fact:</h4>
+<h5>@Model.CatFact</h5>
+
+<form method="get">
+<div class="form-group">
     <button type="submit" class="btn btn-primary">Next fact</button>
-    <label asp-for="Fact" />
 </div>
+</form>

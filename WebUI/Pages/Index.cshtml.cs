@@ -7,13 +7,14 @@ namespace WebUI.Pages
     public class IndexModel : PageModel
     {
         [BindProperty]
-        public string Fact { get; set; }
+        public string CatFact { get; set; }
 
-        ApplicationProcessor application = new();
+        IApplicationProcessor applicationProcessor = new ApplicationProcessor();
 
-        public void OnGet()
+        public async Task<IActionResult> OnGetAsync()
         {
-
+            CatFact = await applicationProcessor.GetFact();
+            return Page();
         }
     }
 }
