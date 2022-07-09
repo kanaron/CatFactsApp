@@ -1,14 +1,26 @@
-﻿using System;
+﻿using CatFactsLib.API;
+using CatFactsLib.Files;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CatFactsLib
+namespace CatFactsLib.CatFact
 {
-    public class CatFactProcessor
+    public static class CatFactProcessor
     {
-        public static async Task<CatFactModel> LoadFact()
+        public static async Task<string> LoadCatFact()
+        {
+
+            CatFactModel model = await GetFactFromWeb();
+
+            FileProcessor.AddToFile(model.Fact);
+
+            return model.Fact;
+        }
+
+        private static async Task<CatFactModel> GetFactFromWeb()
         {
             string function = "fact";
 

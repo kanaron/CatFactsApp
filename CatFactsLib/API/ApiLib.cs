@@ -5,29 +5,18 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CatFactsLib
+namespace CatFactsLib.API
 {
-    public sealed class ApiLib
+    public class ApiLib
     {
-        private static ApiLib _instance;
-
         public static HttpClient ApiClient { get; set; }
 
-        private ApiLib()
+        public ApiLib()
         {
-
+            Initialize();
         }
 
-        public static ApiLib GetInstance()
-        {
-            if (_instance == null)
-            {
-                _instance = new ApiLib();
-            }
-            return _instance;
-        }
-
-        public static void Initialize()
+        public void Initialize()
         {
             ApiClient = new();
             ApiClient.BaseAddress = new Uri("https://catfact.ninja/");
