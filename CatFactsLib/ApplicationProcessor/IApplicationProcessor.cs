@@ -6,6 +6,7 @@ namespace CatFactsLib.ApplicationProcessor
     {
         ApiLib Api { get; set; }
 
+        Task<string> GetFact();
         void Initialize();
     }
 }

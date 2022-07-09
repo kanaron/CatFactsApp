@@ -7,9 +7,15 @@ namespace CatFactsLib.ApplicationProcessor
     {
         public ApiLib Api { get; set; }
 
+        public ApplicationProcessor()
+        {
+            Initialize();
+        }
+
         public void Initialize()
         {
-            ApiLib api = new();
+            if (Api == null)
+                Api = new();
         }
 
         public async Task<string> GetFact()
